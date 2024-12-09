@@ -64,12 +64,14 @@ h1 {
 }
 
 .project-layout {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     /* padding: 1vh 5vw; */
-    width: 100%;
-    padding: 10px 100px 30px 100px;
+    width: 60%;
+    /* padding: 10px 100px 30px 100px; */
+    margin: 0 auto;
     margin-bottom: 30px;
     align-self: center;
 }
@@ -92,7 +94,9 @@ h1 {
 }
 
 .family-pic {
-    max-height: 350px;
+    max-width: 400px;
+    width: 100%;
+    justify-self: center;
 }
 
 .about-text {
