@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #011627;
+    background-color: #DAE2DF;
+}
+
+nav {
+    margin: 20px 40px 40px 10px;
+    /* background-color: #cfcecc; */
+    /* margin: 0 auto; */
+}
+
+.nav-display {
+    height: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+nav a:visited {
+    color: #011627;
+}
+
+nav a:hover{
+    opacity: 80%;
+}
+
+.nav-link {
+    color: #011627;
+}
+
+.nav-link.active {
+    background-color: #999896; /* Custom background */
+    border-radius: 45px;
+}
+
+.nav-text {
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.home-layout {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+#headshot-img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 250px;
+    border-radius: 50px;
+}
+
+h1 {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.project-layout {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1vh 5vw; */
+    width: 100%;
+    padding: 10px 100px 30px 100px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+.profile-links {
+    display: flex;
+    margin: 0 auto; 
+    height: auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.picture-link {
+    height: 40px;
+}
+
+.picture-link :hover{
+    opacity: 70%;
+}
+
+@media screen and (max-width: 980px) {
+    .project-layout {
+        flex-direction: column;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+    
+}
