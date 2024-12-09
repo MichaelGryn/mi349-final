@@ -44,6 +44,7 @@ nav a:hover{
     margin: 0 auto;
     width: 50%;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #headshot-img {
@@ -72,6 +73,31 @@ h1 {
     align-self: center;
 }
 
+.about{
+    /* max-width: 700px; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: max-content;
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.picture-div {
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+.family-pic {
+    max-height: 350px;
+}
+
+.about-text {
+    flex:1;
+}
+
 .profile-links {
     display: flex;
     margin: 0 auto; 
@@ -88,6 +114,11 @@ h1 {
     opacity: 70%;
 }
 
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
 @media screen and (max-width: 980px) {
     .project-layout {
         flex-direction: column;
@@ -97,4 +128,14 @@ h1 {
         row-gap: 40px;
     }
     
+}
+
+@media screen and (max-width: 1150px) {
+    .about {
+        flex-direction: column;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
 }
